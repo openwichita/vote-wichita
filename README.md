@@ -29,3 +29,9 @@ Then visit http://localhost:3000/admin and log in with 'admin@example.com' and
 ## Plan
 
 Check out the [Google Doc](https://docs.google.com/document/d/1jNYCD8m_1YxIYnLgm3F01IecrxyWRLYnijbx1kywqN8/edit)!
+
+## Todos
+
+* Add some model validations
+* Set up [RSpec](http://rspec.info) and [Guard](https://github.com/guard/guard)
+* Plan / customize admin dashboard
