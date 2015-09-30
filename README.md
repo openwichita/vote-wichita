@@ -6,6 +6,23 @@ issues.
 
 ## Stack
 
-* Ruby 2.2.2
-* Rails 4.2.4
-* PostgreSQL
+* [Ruby 2](https://www.ruby-lang.org/)
+* [Rails 4](http://rubyonrails.org/)
+* [PostgreSQL](http://www.postgresql.org/)
+* [ActiveAdmin 1](http://activeadmin.info/)
+
+## Get Started
+
+Use [rvm](https://rvm.io)! The version and gemset should be
+`ruby-2.2.2@vote-wichita`.
+
+```
+$ git clone git@github.com:openwichita/vote-wichita.git
+$ cd vote-wichita
+$ gem install bundler && bundle
+$ bundle exec rake db:migrate db:seed
+$ bundle exec rails s
+```
+
+Then visit http://localhost:3000/admin and log in with 'admin@example.com' and
+'password'. Home page will be at http://localhost:3000.
