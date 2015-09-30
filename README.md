@@ -8,7 +8,6 @@ issues.
 
 * [Ruby 2](https://www.ruby-lang.org/)
 * [Rails 4](http://rubyonrails.org/)
-* [PostgreSQL](http://www.postgresql.org/)
 * [ActiveAdmin 1](http://activeadmin.info/)
 
 ## Get Started
