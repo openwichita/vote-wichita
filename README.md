@@ -26,3 +26,7 @@ $ bundle exec rails s
 
 Then visit http://localhost:3000/admin and log in with 'admin@example.com' and
 'password'. Home page will be at http://localhost:3000.
+
+## Plan
+
+Check out the [Google Doc](https://docs.google.com/document/d/1jNYCD8m_1YxIYnLgm3F01IecrxyWRLYnijbx1kywqN8/edit)!
