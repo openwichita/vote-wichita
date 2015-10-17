@@ -9,9 +9,11 @@
 #  updated_at    :datetime         not null
 #
 
-class Ballot < ActiveRecord::Base
-  belongs_to :admin_user
+FactoryGirl.define do
+  factory :ballot do
+    date          Date.today + 10.days
 
-  validates :date, presence: true
-  validates :admin_user, presence: true
+    # Associations
+    admin_user
+  end
 end
