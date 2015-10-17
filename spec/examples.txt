@@ -1,0 +1,5 @@
+example_id                              | status | run_time        |
+--------------------------------------- | ------ | --------------- |
+./spec/models/admin_user_spec.rb[1:1:1] | passed | 0.0534 seconds  |
+./spec/models/ballot_spec.rb[1:1:1]     | passed | 0.04902 seconds |
+./spec/models/ballot_spec.rb[1:1:2]     | passed | 0.0089 seconds  |

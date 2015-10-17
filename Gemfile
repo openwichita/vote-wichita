@@ -41,6 +41,10 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'guard'
   gem 'guard-rspec', require: false
+  gem 'factory_girl_rails', '~> 4.0'
+  gem 'faker'
+  gem 'database_cleaner'
+  gem 'annotate'
 end
 
 group :development do
