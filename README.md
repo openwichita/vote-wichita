@@ -35,3 +35,13 @@ Check out the [Google Doc](https://docs.google.com/document/d/1jNYCD8m_1YxIYnLgm
 * Add some model validations
 * Set up [RSpec](http://rspec.info) and [Guard](https://github.com/guard/guard)
 * Plan / customize admin dashboard
+
+## Test Setup
+
+We are using [rspec](http://rspec.info/) for tests in this application, along with a few other tools
+
+* [database_cleaner](https://github.com/DatabaseCleaner/database_cleaner) - Cleans the test db in between specs
+* [factory_girl](https://github.com/thoughtbot/factory_girl) - Best way to set up dynamic instances of models for tests
+* [annotate](https://github.com/ctran/annotate_models) - Puts schema annotations for models at the top of relevant files
+* [faker](https://github.com/stympy/faker) - Generates fake values for common things in factories and otherwise
+* [guard](https://github.com/guard/guard) - Watches files and auto-runs relevant tests.
