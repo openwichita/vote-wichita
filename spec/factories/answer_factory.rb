@@ -10,9 +10,13 @@
 #  updated_at  :datetime         not null
 #
 
-class Answer < ActiveRecord::Base
-  belongs_to :question
+require 'faker'
 
-  validates :question_id, presence: true
-  validates :text, presence: true
+FactoryGirl.define do
+	factory :answer do
+		text         Faker::Lorem.sentence
+
+		# Associations
+    question
+	end
 end
