@@ -13,4 +13,8 @@
 
 class Question < ActiveRecord::Base
   belongs_to :ballot
+
+  # make sure ballot ID and text are present. Allows text, summary to be empty.
+  validates :ballot_id, presence: true
+  validates :text, presence: true
 end
