@@ -13,5 +13,6 @@ ActiveAdmin.register Question do
 #   permitted
 # end
 
+	permit_params :text, :summary, :friendly_name, :ballot_id
 
 end

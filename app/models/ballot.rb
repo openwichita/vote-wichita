@@ -13,5 +13,5 @@ class Ballot < ActiveRecord::Base
   belongs_to :admin_user
 
   validates :date, presence: true
-  validates :admin_user, presence: true
+  validates :admin_user_id, presence: true
 end

@@ -14,4 +14,21 @@
 require 'spec_helper'
 
 RSpec.describe Question do
+	it "has a valid factory" do
+		expect(FactoryGirl.create(:question)).to be_valid
+	end
+
+	describe 'validates' do
+		before(:each) { @question = build(:question) }
+
+		it "is invalid without an associated ballot id" do
+			@question.ballot_id = nil
+			expect(@question).not_to be_valid
+		end
+
+		it "is invalid without text" do
+			@question.text = nil
+			expect(@question).not_to be_valid
+		end
+	end
 end
