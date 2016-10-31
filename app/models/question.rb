@@ -17,4 +17,8 @@ class Question < ActiveRecord::Base
   # make sure ballot ID and text are present. Allows text, summary to be empty.
   validates :ballot_id, presence: true
   validates :text, presence: true
+
+  def display_name
+  	"#{friendly_name}"
+  end
 end

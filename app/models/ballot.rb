@@ -14,4 +14,8 @@ class Ballot < ActiveRecord::Base
 
   validates :date, presence: true
   validates :admin_user_id, presence: true
+
+  def display_name
+  	"#{date}"
+  end
 end
