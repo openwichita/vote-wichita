@@ -13,6 +13,6 @@ ActiveAdmin.register Ballot do
 #   permitted
 # end
 
-  permit_params :date
+  permit_params :date, :admin_id
 
 end
