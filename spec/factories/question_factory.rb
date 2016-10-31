@@ -11,14 +11,13 @@
 #  updated_at    :datetime         not null
 #
 
-class Question < ActiveRecord::Base
-  belongs_to :ballot
+require 'faker'
 
-  # make sure ballot ID and text are present. Allows text, summary to be empty.
-  validates :ballot_id, presence: true
-  validates :text, presence: true
+FactoryGirl.define do
+	factory :question do
+		text         Faker::Lorem.sentence
 
-  def display_name
-  	"#{friendly_name}"
-  end
+		# Associations
+    ballot
+	end
 end

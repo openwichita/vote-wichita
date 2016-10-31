@@ -24,4 +24,8 @@ class AdminUser < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   validates :email, uniqueness: true
+
+  def display_name
+  	"#{email}"
+  end
 end
